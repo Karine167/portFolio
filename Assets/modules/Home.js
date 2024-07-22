@@ -48,6 +48,16 @@ class Home {
                 console.log("ERREUR lors de l'appel api getReposInformations", error)
             })
         const projects = response.data
+        for (let i = 0; i < projects.length ; i++){
+            const languagesUrl = projects[i].languages_url
+            const responseLanguages = await octokit
+                .request(`GET ${languagesUrl}`)
+                .catch((error) => {
+                    console.log("ERREUR lors de l'appel api getReposInformations-Languages", error)
+                })
+            projects[i].languages = responseLanguages.data
+        }
+
         this.updateHTMLProjects(projects)
     }
 
@@ -68,6 +78,7 @@ class Home {
             const project = myProjects[i]
             if (tabImg.indexOf(project.name) > -1) {
                 this.projectsTitle[htmlIndex].textContent = project.name
+                this.createHTMLLanguageTag(this.projectsTagsContainer[i], project.languages)
                 this.projectsDescription[htmlIndex].textContent = project.description
                 this.projectsURL[htmlIndex].setAttribute("href", project.homepage )
                 this.projectsGithub[htmlIndex].setAttribute("href", project.html_url)
@@ -78,7 +89,19 @@ class Home {
             
             htmlIndex++
         }
+    }
 
+    createHTMLLanguageTag(div, languages) {
+        const arrayLanguages = Object.keys(languages)
+        const arraySize = Object.values(languages)
+        let totalSize = 0
+        arraySize.forEach ((numb) => totalSize += numb)
+        for (let j = 0; j < arrayLanguages.length; j++){
+            const span = document.createElement('span')
+            const pourcent = Math.round(arraySize[j]*100/totalSize)
+            span.textContent = arrayLanguages[j] + '-' + pourcent + '%'
+            div.appendChild(span)
+        } 
     }
 }
 
