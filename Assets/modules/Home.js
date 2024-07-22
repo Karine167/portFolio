@@ -66,13 +66,13 @@ class Home {
         let htmlIndex = 0
         for (let i = 0; i <= nbProjects; i++){
             const project = myProjects[i]
-            this.projectsTitle[htmlIndex].textContent = project.name
-            this.projectsDescription[htmlIndex].textContent = project.description
-            this.projectsURL[htmlIndex].setAttribute("href", project.homepage )
-            this.projectsGithub[htmlIndex].setAttribute("href", project.html_url)
-            
-            let imgName = 'Assets/images/' + project.name + '.jpg'
             if (tabImg.indexOf(project.name) > -1) {
+                this.projectsTitle[htmlIndex].textContent = project.name
+                this.projectsDescription[htmlIndex].textContent = project.description
+                this.projectsURL[htmlIndex].setAttribute("href", project.homepage )
+                this.projectsGithub[htmlIndex].setAttribute("href", project.html_url)
+                //Affichage d'une photo du site
+                let imgName = 'Assets/images/' + project.name + '.jpg'
                 this.projectsImg[htmlIndex].setAttribute('src', imgName)
             }
             
