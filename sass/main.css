@@ -82,16 +82,20 @@ a {
   height: 1.5rem;
 }
 
-.button {
+.button, .button--secondary {
   background-color: #F7C9B6;
   border-radius: 0.5rem;
   color: #301f1f;
   padding: 0.5rem 0.75rem;
   height: 1.25rem;
-  display: flex;
+  display: inline-flex;
   align-items: center;
   -moz-column-gap: 0.5rem;
        column-gap: 0.5rem;
+}
+.button--secondary {
+  border: solid 2px #F7C9B6;
+  background-color: #F0E1DE;
 }
 .button__icon {
   width: 1.25rem;
