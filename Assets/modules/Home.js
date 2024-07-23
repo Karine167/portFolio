@@ -57,7 +57,6 @@ class Home {
                 })
             projects[i].languages = responseLanguages.data
         }
-
         this.updateHTMLProjects(projects)
     }
 
@@ -71,32 +70,34 @@ class Home {
     }
     
     updateHTMLProjects(myProjects) {
-        const nbProjects = myProjects.length - 1
+        const nbProjects = myProjects.length 
         const tabImg = ['ECFGarage', 'JeuDesADeuxJoueurs', 'associationDesJeunes', 'ProjetMissionKGB']
         let htmlIndex = 0
-        for (let i = 0; i <= nbProjects; i++){
+        console.log(myProjects)
+        for (let i = 0; i < nbProjects; i++){
             const project = myProjects[i]
             if (tabImg.indexOf(project.name) > -1) {
-                this.projectsTitle[htmlIndex].textContent = project.name
-                this.createHTMLLanguageTag(this.projectsTagsContainer[i], project.languages)
+                const createdAt = project.created_at.substring(0,10)
+                const projectTitle = project.name + ' - date de création : ' + createdAt
+                this.projectsTitle[htmlIndex].textContent = projectTitle 
+                this.createHTMLLanguageTag(this.projectsTagsContainer[htmlIndex], project.languages)
                 this.projectsDescription[htmlIndex].textContent = project.description
                 this.projectsURL[htmlIndex].setAttribute("href", project.homepage )
                 this.projectsGithub[htmlIndex].setAttribute("href", project.html_url)
                 //Affichage d'une photo du site
                 let imgName = 'Assets/images/' + project.name + '.jpg'
                 this.projectsImg[htmlIndex].setAttribute('src', imgName)
+                htmlIndex++
             }
-            
-            htmlIndex++
         }
     }
 
     createHTMLLanguageTag(div, languages) {
         const arrayLanguages = Object.keys(languages)
         const arraySize = Object.values(languages)
-        let totalSize = 0
+        let totalSize = 0   
         arraySize.forEach ((numb) => totalSize += numb)
-        for (let j = 0; j < arrayLanguages.length; j++){
+        for (let j = 0; j < arrayLanguages.length ; j++){
             const span = document.createElement('span')
             const pourcent = Math.round(arraySize[j]*100/totalSize)
             span.textContent = arrayLanguages[j] + '-' + pourcent + '%'
