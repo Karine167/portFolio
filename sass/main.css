@@ -82,6 +82,10 @@ a {
   height: 1.5rem;
 }
 
+.home {
+  background-color: #83BDC0;
+}
+
 .button, .button--secondary {
   background-color: #F7C9B6;
   border-radius: 0.5rem;
@@ -104,6 +108,39 @@ a {
 .button__label {
   color: #301f1f;
   font-family: "Hind Madurai", sans-serif;
-  font-weight: 400;
+  font-size: 1rem;
   font-style: normal;
+  font-weight: 400;
+}
+
+.hero {
+  background: #F0E1DE;
+  color: #301f1f;
+  margin: 1rem;
+  padding: 4rem 2rem 3rem;
+  width: 40%;
+  border-radius: 1rem;
+}
+.hero__subtitle {
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-size: 1.25rem;
+  font-style: italic;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+.hero__title {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 700;
+  margin-bottom: 2.15rem;
+}
+.hero__description {
+  font-family: "Hind Madurai", sans-serif;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  margin-bottom: 2rem;
 }/*# sourceMappingURL=main.css.map */

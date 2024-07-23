@@ -13,7 +13,7 @@
 
     <link rel="stylesheet" href="sass/main.css">
 </head>
-<body>
+<body class="home">
     <header class="header">
         <img src="Assets/images/baniere.png" class="header__baniere" alt="ville futuriste avec un véhicule volant"/>
         <a href="/" class="header__back-home">
@@ -25,19 +25,20 @@
         </a>
     </header>
     <main>
-        <section>
-            <h1>Portfolio de Karine Rude </h1>
-            <p class="home-description"> Vous trouverez sur ce site des informations détaillées sur mes 
+        <section class="hero">
+            <h1 class="hero__title">Portfolio de Karine Rude </h1>
+            <p class="hero__description home-description"> Vous trouverez sur ce site des informations détaillées sur mes 
                 différentes réalisations, avec les langages utilisés, des liens vers ces sites et vers 
                 leurs repositories sur GitHub. En cliquant sur le bouton "En savoir plus sur ce projet", 
                 vous pourrez également voir quelques captures d'écran des interfaces d'administration pour
                 les projets qui en possède une. 
-        </p>
+            </p>
             
-            <h2><img src="#" style="width: 30px" class="js-home-avatar" />
-                Description de mon repository Github
-            </h2>
-            <p class="js-home-description"></p>
+            <div class="hero__avatar">
+                <img src="#" style="width: 30px" class="js-home-avatar" />
+            </div>
+            <h2 class="hero__subtitle">Description de mon repository Github</h2>
+            <p class="hero__description js-home-description"></p>
 
             <a  class="button" href="/tous-mes-projets.html">
                 <img class="button__icon" src="Assets/icons/projetsweb.svg" />
