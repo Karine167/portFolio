@@ -12,6 +12,7 @@ class Home {
         this.projectsURL = document.querySelectorAll('.js-home-project-url')
         this.projectsGithub = document.querySelectorAll('.js-home-project-github')
         this.projectsImg = document.querySelectorAll('.js-home-project-img')
+        this.projectsInfos = document.querySelectorAll('.js-home-project-infos')
 
         this.init()
     }
@@ -84,6 +85,8 @@ class Home {
                 this.projectsDescription[htmlIndex].textContent = project.description
                 this.projectsURL[htmlIndex].setAttribute("href", project.homepage )
                 this.projectsGithub[htmlIndex].setAttribute("href", project.html_url)
+                const projectInfos = project.name + '.html'
+                this.projectsInfos[htmlIndex].setAttribute("href", projectInfos)
                 //Affichage d'une photo du site
                 let imgName = 'Assets/images/' + project.name + '.jpg'
                 this.projectsImg[htmlIndex].setAttribute('src', imgName)

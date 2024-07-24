@@ -1,0 +1,44 @@
+@use "../abstracts/_variables" as var
+@use "../abstracts/_mixins" as mixin
+
+.oneProject
+    background: var.$rose-quartz
+    color: var.$black
+    margin: 1rem
+    padding: 2rem 1rem 
+    border-radius: 1rem
+    position: relative
+
+    &__title
+        font-family: "Montserrat", sans-serif
+        font-optical-sizing: auto
+        @include mixin.font(1.5rem, normal, 700)
+        margin-bottom: 2.15rem
+    
+    &__article
+        border: solid 3px var.$blue-grotto
+        border-radius: 1rem
+        padding: 1rem
+        display: block
+        margin-bottom: 0.5rem
+
+    &__subtitle
+        font-family: "Lora", serif
+        font-optical-sizing: auto
+        @include mixin.font(1.25rem, italic, 600)
+        margin-bottom: 0.75rem
+    
+    &__img
+        width: 100%
+        height: 100%
+        object-fit: cover
+        border-radius: 1rem
+        
+    &__description
+        margin-top: 1rem
+        font-family: "Hind Madurai", sans-serif
+        @include mixin.font(1rem, normal, 400)
+        margin-bottom: 1rem
+    
+    @media (min-width: 1024px) 
+        width:90%

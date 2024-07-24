@@ -1,0 +1,30 @@
+@use "../abstracts/_variables" as var
+@use "../abstracts/_mixins" as mixin
+
+.footer
+    background-color: var.$blue-grotto
+    border-radius: 1rem
+    margin: 0.5rem
+    padding: 0.5rem
+    display: block
+    justify-content: center
+
+    &__link
+        display: flex
+        justify-content: space-between
+        padding: 0.5rem
+
+    &__icon
+        width: 1.5rem
+        height: 1.5rem
+
+    &__subtitle
+        font-family: "Lora", serif
+        font-optical-sizing: auto
+        @include mixin.font(1.25rem, italic, 600)
+        margin-bottom: 0.75rem
+    
+    @media (min-width: 1024px) 
+        margin: 2rem
+        padding: 1rem
+        
