@@ -16,13 +16,15 @@
 <body class="home">
     <header class="header">
         <img src="Assets/images/baniere.png" class="header__baniere" alt="ville futuriste avec un véhicule volant"/>
-        <a href="/" class="header__back-home">
-            <img class="header__icon" src="Assets/icons/home.svg" />
-        </a>
-        <a class="button" href="https://www.linkedin.com/in/karine-rude-reconversion/"  target="_blank">
-            <img class="button__icon" src="Assets/icons/linkedin.svg" />
-            <span class="button__label">Mon profil LinkedIn</span>
-        </a>
+        <div class="header__link">
+            <a href="/" class="header__back-home">
+                <img class="header__icon" src="Assets/icons/home.svg" />
+            </a>
+            <a class="button" href="https://www.linkedin.com/in/karine-rude-reconversion/"  target="_blank">
+                <img class="button__icon" src="Assets/icons/linkedin.svg" />
+                <span class="button__label">Mon profil LinkedIn</span>
+            </a>
+        </div>
     </header>
     <main class="main">
         <section class="hero">
@@ -40,89 +42,103 @@
             <h2 class="hero__subtitle">Description de mon repository Github</h2>
             <p class="hero__description js-home-description"></p>
 
-            <a  class="button" href="/tous-mes-projets.html">
-                <img class="button__icon" src="Assets/icons/projetsweb.svg" />
-                <span class="button__label">Accéder à tous mes projets </span>
-            </a>
-            <a href="#" class="button--secondary js-home-profil-url" target="_blank">
+            <a href="#" class="button js-home-profil-url" target="_blank">
                 <img class="button__icon" src="Assets/icons/github.svg" />
                 <span class="button__label">Accéder à mon repository Github </span>
             </a>
             
         </section>
         <section class="projects">
-            <h2>Mes projets les plus significatifs : </h2>
+            <h2 class="projects__title">Mes projets les plus significatifs : </h2>
             <ul>
-                <li>
-                    <h3 class="js-home-project-title"> </h3>
-                    <img style="width: 30%" class="js-home-project-img" src="Assets/images/imgAbsente.jpg" />
-                    <div class="js-home-project-tags-container"></div>
+                <li class="projects__project">
+                    <h3 class="projects__subtitle js-home-project-title"> </h3>
+                    <img class="projects__img js-home-project-img" src="Assets/images/imgAbsente.jpg" />
+                    <div class="projects__tag js-home-project-tags-container"></div>
                     <a href="#" class="button js-home-project-url" target="_blank">
                         <img class="button__icon" src="Assets/icons/projetsweb.svg" />
-                        <span class="button__label">Voir le site du projet</span>
+                        <span class="button__label">Site web du projet</span>
                     </a>
                     <a href="#" class="button--secondary js-home-project-github" target="_blank">
                         <img class="button__icon" src="Assets/icons/github.svg" />
-                        <span class="button__label">Accéder au repository Github de ce projet</span>
+                        <span class="button__label">Repository Github du projet</span>
                     </a>
-                    <p class="js-home-project-description"></p>
-                    <a class="button--secondary" href="/projet.html">
+                    <p class="projects__description js-home-project-description"></p>
+                    <a class="button--secondary js-home-project-infos" href="/projet.html">
                         <img class="button__icon" src="Assets/icons/arrow.svg" /> 
-                        <span class="button__label" >En savoir plus sur ce projet</span>
+                        <span class="button__label" >En savoir plus</span>
                     </a>
                 </li>
-                <li>
-                    <h3 class="js-home-project-title"> </h3>
-                    <img style="width: 30%" class="js-home-project-img" src="Assets/images/imgAbsente.jpg" />
-                    <div class="js-home-project-tags-container"></div>
+                <li class="projects__project">
+                    <h3 class="projects__subtitle js-home-project-title"> </h3>
+                    <img class="projects__img js-home-project-img" src="Assets/images/imgAbsente.jpg" />
+                    <div class="projects__tag js-home-project-tags-container"></div>
                     <a href="#" class="button js-home-project-url" target="_blank">
                         <img class="button__icon" src="Assets/icons/projetsweb.svg" />
-                        <span class="button__label">Voir le site du projet</span>
+                        <span class="button__label">Site web du projet</span>
                     </a>
                     <a href="#" class="button--secondary js-home-project-github" target="_blank">
                         <img class="button__icon" src="Assets/icons/github.svg" />
-                        <span class="button__label">Accéder au repository Github de ce projet</span>
+                        <span class="button__label">Repository Github du projet</span>
                     </a>
-                    <p class="js-home-project-description"></p>
-                    <a class="button--secondary" href="/projet.html">
+                    <p class="projects__description js-home-project-description"></p>
+                    <a class="button--secondary js-home-project-infos" href="/projet.html">
                         <img class="button__icon" src="Assets/icons/arrow.svg" /> 
-                        <span class="button__label" >En savoir plus sur ce projet</span>
+                        <span class="button__label" >En savoir plus</span>
                     </a>
                 </li>
-                <li>
-                    <h3 class="js-home-project-title"> </h3>
-                    <img style="width: 30%" class="js-home-project-img" src="Assets/images/imgAbsente.jpg" />
-                    <div class="js-home-project-tags-container"></div>
+                <li class="projects__project">
+                    <h3 class="projects__subtitle js-home-project-title"> </h3>
+                    <img class="projects__img js-home-project-img" src="Assets/images/imgAbsente.jpg" />
+                    <div class="projects__tag js-home-project-tags-container"></div>
                     <a href="#" class="button js-home-project-url" target="_blank">
                         <img class="button__icon" src="Assets/icons/projetsweb.svg" />
-                        <span class="button__label">Voir le site du projet</span>
+                        <span class="button__label">Site web du projet</span>
                     </a>
                     <a href="#" class="button--secondary js-home-project-github" target="_blank">
                         <img class="button__icon" src="Assets/icons/github.svg" />
-                        <span class="button__label">Accéder au repository Github de ce projet</span>
+                        <span class="button__label">Repository Github du projet</span>
                     </a>
-                    <p class="js-home-project-description"></p>
-                    <a class="button--secondary" href="/projet.html">
+                    <p class="projects__description js-home-project-description"></p>
+                    <a class="button--secondary js-home-project-infos" href="/projet.html">
                         <img class="button__icon" src="Assets/icons/arrow.svg" /> 
-                        <span class="button__label" >En savoir plus sur ce projet</span>
+                        <span class="button__label" >En savoir plus</span>
                     </a>
                 </li>
-                <li>
-                    <h3 class="js-home-project-title"> </h3>
-                    <img style="width: 30%" class="js-home-project-img" src="Assets/images/imgAbsente.jpg" />
-                    <div class="js-home-project-tags-container"></div>
+                <li class="projects__project">
+                    <h3 class="projects__subtitle js-home-project-title"> </h3>
+                    <img class="projects__img js-home-project-img" src="Assets/images/imgAbsente.jpg" />
+                    <div class="projects__tag js-home-project-tags-container"></div>
                     <a href="#" class="button js-home-project-url" target="_blank">
                         <img class="button__icon" src="Assets/icons/projetsweb.svg" />
-                        <span class="button__label">Voir le site du projet</span>
+                        <span class="button__label">Site web du projet</span>
                     </a>
                     <a href="#" class="button--secondary js-home-project-github" target="_blank">
                         <img class="button__icon" src="Assets/icons/github.svg" />
-                        <span class="button__label">Accéder au repository Github de ce projet</span>
+                        <span class="button__label">Repository Github du projet</span>
                     </a>
-                    <p class="js-home-project-description"></p>
-                    <a class="button--secondary" href="/projet.html">
+                    <p class="projects__description js-home-project-description"></p>
+                    <a class="button--secondary js-home-project-infos" href="/projet.html">
                         <img class="button__icon" src="Assets/icons/arrow.svg" /> 
-                        <span class="button__label" >En savoir plus sur ce projet</span>
+                        <span class="button__label" >En savoir plus</span>
+                    </a>
+                </li>
+                <li class="projects__project">
+                    <h3 class="projects__subtitle js-home-project-title"> </h3>
+                    <img class="projects__img js-home-project-img" src="Assets/images/imgAbsente.jpg" />
+                    <div class="projects__tag js-home-project-tags-container"></div>
+                    <a href="#" class="button js-home-project-url" target="_blank">
+                        <img class="button__icon" src="Assets/icons/projetsweb.svg" />
+                        <span class="button__label">Site web du projet</span>
+                    </a>
+                    <a href="#" class="button--secondary js-home-project-github" target="_blank">
+                        <img class="button__icon" src="Assets/icons/github.svg" />
+                        <span class="button__label">Repository Github du projet</span>
+                    </a>
+                    <p class="projects__description js-home-project-description"></p>
+                    <a class="button--secondary js-home-project-infos" href="/projet.html">
+                        <img class="button__icon" src="Assets/icons/arrow.svg" /> 
+                        <span class="button__label" >En savoir plus</span>
                     </a>
                 </li>
             </ul>

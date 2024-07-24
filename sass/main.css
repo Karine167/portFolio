@@ -60,12 +60,18 @@ a {
 .header {
   background-color: #549BAD;
   border-radius: 1rem;
-  padding: 1rem;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  display: inline-block;
+  justify-content: center;
+}
+.header__link {
   display: flex;
   justify-content: space-between;
+  padding: 0.5rem;
 }
 .header__baniere {
-  width: 80%;
+  width: 100%;
   border-radius: 1em;
 }
 .header__back-home {
@@ -82,9 +88,25 @@ a {
   width: 1.5rem;
   height: 1.5rem;
 }
+@media (min-width: 1024px) {
+  .header {
+    margin: 2rem;
+    padding: 2rem;
+  }
+}
 
 .home {
   background-color: #83BDC0;
+}
+
+.main {
+  display: block;
+  justify-content: center;
+}
+@media (min-width: 1024px) {
+  .main {
+    display: flex;
+  }
 }
 
 .button, .button--secondary {
@@ -119,7 +141,6 @@ a {
   color: #301f1f;
   margin: 1rem;
   padding: 4rem 2rem 3rem;
-  width: 90%;
   border-radius: 1rem;
   position: relative;
 }
@@ -134,7 +155,7 @@ a {
 .hero__title {
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-style: normal;
   font-weight: 700;
   margin-bottom: 2.15rem;
@@ -148,10 +169,10 @@ a {
 }
 .hero__avatar {
   position: absolute;
-  top: 1rem;
-  right: -2rem;
-  width: 7rem;
-  height: 7rem;
+  top: 0.2rem;
+  right: -1rem;
+  width: 4rem;
+  height: 4rem;
   border-radius: 100%;
   overflow: hidden;
 }
@@ -160,4 +181,107 @@ a {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+@media (min-width: 1024px) {
+  .hero {
+    width: 15%;
+  }
+}
+
+.projects {
+  background: #F0E1DE;
+  color: #301f1f;
+  margin: 1rem;
+  padding: 2rem 1rem;
+  border-radius: 1rem;
+  position: relative;
+}
+.projects__title {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 700;
+  margin-bottom: 2.15rem;
+}
+.projects__project {
+  border: solid 3px #549BAD;
+  border-radius: 1rem;
+  padding: 1rem;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+.projects__subtitle {
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-size: 1.25rem;
+  font-style: italic;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+.projects__img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 1rem;
+}
+.projects__tag {
+  margin: 0.5rem;
+  display: block;
+}
+.projects__tag span {
+  display: block flow-root;
+  border-radius: 0.5rem;
+  margin: 0.2rem;
+  padding: 0.2rem;
+  justify-content: center;
+  text-align: center;
+  color: #301f1f;
+  font-family: "Hind Madurai", sans-serif;
+  font-size: 1rem;
+  font-style: italic;
+  font-weight: 600;
+  white-space: nowrap;
+}
+.projects__description {
+  margin-top: 1rem;
+  font-family: "Hind Madurai", sans-serif;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+@media (min-width: 1024px) {
+  .projects {
+    width: 75%;
+  }
+}
+
+.HTML {
+  background-color: #facdc2;
+}
+
+.CSS {
+  background-color: #d2b9f7;
+}
+
+.Sass {
+  background-color: #f6b9d7;
+}
+
+.JavaScript {
+  background-color: #fbf5cb;
+}
+
+.PHP {
+  background-color: #c5cef5;
+}
+
+.Twig {
+  background-color: #f2f9ac;
+}
+
+.Hack {
+  background-color: #d7d6d6;
 }/*# sourceMappingURL=main.css.map */

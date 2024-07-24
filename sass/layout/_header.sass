@@ -4,14 +4,20 @@
 .header
     background-color: var.$blue-grotto
     border-radius: 1rem
-    padding: 1rem
-    display: flex
-    justify-content: space-between
+    margin: 0.5rem
+    padding: 0.5rem
+    display: inline-block
+    justify-content: center
+
+    &__link
+        display: flex
+        justify-content: space-between
+        padding: 0.5rem
 
     &__baniere
-        width: 80%
+        width: 100%
         border-radius: 1em
-
+        
     &__back-home
         @include mixin.circle(2rem)
         background-color: var.$scallop-seashell
@@ -22,5 +28,9 @@
     &__icon
         width: 1.5rem
         height: 1.5rem
+    
+    @media (min-width: 1024px) 
+        margin: 2rem
+        padding: 2rem
         
     

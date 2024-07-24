@@ -71,7 +71,7 @@ class Home {
     
     updateHTMLProjects(myProjects) {
         const nbProjects = myProjects.length 
-        const tabImg = ['ECFGarage', 'JeuDesADeuxJoueurs', 'associationDesJeunes', 'ProjetMissionKGB']
+        const tabImg = ['ECFGarage', 'JeuDesADeuxJoueurs', 'associationDesJeunes', 'ProjetMissionKGB', 'portFolio']
         let htmlIndex = 0
         console.log(myProjects)
         for (let i = 0; i < nbProjects; i++){
@@ -100,6 +100,9 @@ class Home {
         for (let j = 0; j < arrayLanguages.length ; j++){
             const span = document.createElement('span')
             const pourcent = Math.round(arraySize[j]*100/totalSize)
+            const backgroundColor = arrayLanguages[j]
+            span.classList.add(backgroundColor)
+            span.style.width = pourcent+'%'
             span.textContent = arrayLanguages[j] + '-' + pourcent + '%'
             div.appendChild(span)
         } 

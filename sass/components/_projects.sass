@@ -1,0 +1,83 @@
+@use "../abstracts/_variables" as var
+@use "../abstracts/_mixins" as mixin
+
+.projects
+    background: var.$rose-quartz
+    color: var.$black
+    margin: 1rem
+    padding: 2rem 1rem 
+    border-radius: 1rem
+    position: relative
+
+    &__title
+        font-family: "Montserrat", sans-serif
+        font-optical-sizing: auto
+        @include mixin.font(1.5rem, normal, 700)
+        margin-bottom: 2.15rem
+    
+    &__project
+        border: solid 3px var.$blue-grotto
+        border-radius: 1rem
+        padding: 1rem
+        display: block
+        margin-bottom: 0.5rem
+
+    &__subtitle
+        font-family: "Lora", serif
+        font-optical-sizing: auto
+        @include mixin.font(1.25rem, italic, 600)
+        margin-bottom: 0.75rem
+    
+    &__img
+        width: 100%
+        height: 100%
+        object-fit: cover
+        border-radius: 1rem
+    
+    &__tag
+        margin: 0.5rem
+        display: block
+        span
+            display: block flow-root
+            border-radius: 0.5rem
+            margin: 0.2rem
+            padding: 0.2rem
+            justify-content: center
+            text-align: center
+            color: var.$black
+            font-family: "Hind Madurai", sans-serif
+            @include mixin.font(1rem, italic , 600 )
+            white-space: nowrap 
+            
+        
+    &__description
+        margin-top: 1rem
+        font-family: "Hind Madurai", sans-serif
+        @include mixin.font(1rem, normal, 400)
+        margin-bottom: 1rem
+    
+    @media (min-width: 1024px) 
+        width:75%
+    
+
+.HTML
+    background-color: #facdc2
+
+.CSS
+    background-color: #d2b9f7
+
+.Sass
+    background-color: #f6b9d7
+
+.JavaScript 
+    background-color: #fbf5cb
+
+.PHP
+    background-color: #c5cef5
+
+.Twig
+    background-color: #f2f9ac
+
+.Hack
+    background-color: #d7d6d6
+
