@@ -447,6 +447,13 @@ li:before {
   margin-bottom: 1rem;
 }
 
+.out-link {
+  font-weight: 700;
+  color: #549BAD;
+  -webkit-text-decoration: underline solid 2px #549BAD;
+          text-decoration: underline solid 2px #549BAD;
+}
+
 @media (min-width: 768px) {
   .oneProject__gallery2--imgArticle2 {
     width: 48%;
