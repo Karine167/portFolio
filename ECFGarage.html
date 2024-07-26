@@ -26,9 +26,136 @@
             </a>
         </div>
     </header>
-    <section class="oneProject">
-        <h2 class="oneProject__title js-project-title">ECFGarage</h2>
+    
+    <section id="navbar" class="oneProject">
+        <h1 class="oneProject__title js-project-title">ECFGarage</h1>
+        <p class="oneProject__subtitle"> Ce projet était en fait l'épreuve de contrôle continu de la formation, 
+            et c'est le projet que j'ai présenté lors de l'oral pour le passage du titre de développeur web. <br><br>
+            Ce projet n'est pas terminé et de nombreux points sont encore à améliorer ou à compléter, mais il s'agit du plus
+            gros projet que j'ai réalisé à ce jour. 
+        </p>
         
+        <nav class="oneProject__navbar">
+            <div class="navbar-link">
+                <a class="button button__label" href="#ECFGarageResume">Résumé du projet</a>
+                <a class="button--secondary button__label" href="#ECFGaragePrepare">Préparation et gestion du projet</a>
+                <a class="button--secondary button__label" href="#ECFGarageMaquettage">Maquettage de l'application</a>
+            </div>
+        </nav>
+        <article id="ECFGarageResume" class="oneProject__article">
+            <h2 class="oneProject__subtitle">Résumé du projet</h2>
+            <p class="oneProject__description">Il s'agit de la réalisation d'un site web vitrine pour un client fictif, Mr Vincent Parrot. <br>
+                Il a ouvert son garage en 2021 à Toulouse et, afin d'augmenter sa visibilité pour pouvoir se faire une place parmi la concurrence,
+                il désire avoir un site web qui possède deux interfaces.
+            </p>
+            <p class="oneProject__description">
+                La première interface est dédiée aux éventuels futurs clients du garage, les visiteurs du site web. Elle leur 
+                permet de trouver facilement les informations utiles sur les prestations proposées, les horaires, et les moyens 
+                de contact. <br> 
+                Un formulaire de contact en ligne est proposé. <br>
+                Le visiteur peut accéder à la liste complète des véhicules d'occasion à vendre, ou trier à l'aide de différents
+                filtres les annonces. <br>
+                De plus, la satisfaction clientèle étant importante, le visiteur a aussi la possibilité de noter et d'émettre un 
+                commentaire sur la qualité des services rendus. Une fois validés par un employé, les commentaires notés sont visibles
+                sur la page d'accueil et une note moyenne est calculée.
+            </p>
+            <p class="oneProject__description">
+                La deuxième interface est sécurisée et nécessite une authentification pour pouvoir y accéder car elle concerne 
+                le propriétaire et les employés du garage. Le propriétaire peut gérer les comptes de ses employés et modifier 
+                les informations de son site, alors que les employés peuvent ajouter de nouvelles annonces, approuver (ou non) 
+                des commentaires, et répondre à des demandes de contact. 
+            </p>
+            <p class="oneProject__description">
+                Pour réaliser ce site, j'ai utilisé le framework Symfony pour la structure d'ensemble, les langages HTML, Twig, CSS, 
+                le framework Bootstrap et un peu de JavaScript pour le front-end, une base de données relationnelles avec MariaDB, 
+                et les langages PHP et Sql pour le back-end. <br>
+                Ayant été seule sur ce projet, j'ai été confrontée à quelques défis et j'ai dû recourir à de nombreuses sources 
+                documentaires (manuels, forums, vidéos…) pour compléter les connaissances acquises lors de ma formation et 
+                augmenter mes compétences. Ce fût une expérience très enrichissante.
+            </p>
+            <a class="button--secondary button__label" href="#navbar">Menu</a>
+        </article>
+        <article id="ECFGaragePrepare" class="oneProject__article">
+            <h2 class="oneProject__subtitle">Préparation et gestion du projet</h2>
+            <p class="oneProject__description">
+                Pour répondre à toutes les attentes de ce client fictif, j'ai réalisé un tableau Kanban (avec Trello) 
+                contenant des cartes sur lesquelles j'ai essayé de répertorier toutes les étapes générales et 
+                indispensables pour réaliser ce projet et d'autres cartes sur lesquelles j'ai rédigé des user-stories 
+                pour en déduire différents éléments à réaliser afin de les satisfaire.
+            </p>
+            <div class="oneProject__gallery">
+                <img class="oneProject__gallery--imgArticle" src="/Assets/images/ECFGarage/ECFGarageTrello.jpg"  />
+                <div class="OneProject__gallery2">
+                    <img class="oneProject__gallery2--imgArticle2" src="/Assets/images/ECFGarage/ECFGarageTrelloCarteGen1.jpg"  />
+                    <img class="oneProject__gallery2--imgArticle2" src="/Assets/images/ECFGarage/ECFGarageTrelloCarteGen2.jpg"  />
+                    <img class="oneProject__gallery2--imgArticle2" src="/Assets/images/ECFGarage/ECFGarageTrelloCarteUS1.jpg"  />
+                    <img class="oneProject__gallery2--imgArticle2" src="/Assets/images/ECFGarage/ECFGarageTrelloCarteUS8.jpg"  />
+                </div>
+            </div>
+            <br>
+            <br>
+            <h2 class="oneProject__subtitle">Diagramme de cas d'utilisation</h2>
+            <div class="diagrammes">
+                <img class="oneProject__oneImgDiag" src="/Assets/images/ECFGarage/ECFGarageDiagCasUtil.jpg"  />
+                <div class="diagrammes-description">
+                    <p class="oneProject__description">Ce diagramme résume toutes les actions ou tâches que peuvent réaliser les différents 
+                        utilisateurs du site web en fonction de leur rôle au sein de l'entreprise.
+                    </p>
+                    <p class="oneProject__description">
+                        <em>Remarque :</em> J'ai finalement ajouté aux employés, la possibilité de commenter et de supprimer les demandes
+                        de contacts de la part des clients, cette fonctionnalité n'apparaît pas sur le diagramme précédent.
+                    </p>
+                </div>
+            </div>
+            <br>
+            <br>
+            <h2 class="oneProject__subtitle">Diagramme de séquence</h2>
+            <div class="diagrammes">
+                <img class="oneProject__oneImgDiag" src="/Assets/images/ECFGarage/ECFGarageDiagSequence.jpg"  />
+                <div class="diagrammes-description">
+                    <p class="oneProject__description">
+                        Sur ce schéma, plusieurs diagrammes de séquences ont été fusionnés afin de montrer le processus 
+                        d'un nouveau visiteur qui : 
+                        <ul>
+                            <li>demande puis découvre la liste des véhicules d'occasion </li>
+                            <li>filtre cette liste selon ses critères </li>
+                            <li>choisit un véhicule en particulier afin d'obtenir la fiche complète de ses caractéristiques.</li>
+                            <li>remplit le formulaire de contact pour en savoir plus à propos d'une voiture en particulier.</li>
+                        </ul>
+                        <br>        
+                        Il y a alors deux possibilités :
+                            <ul>
+                                <li>le visiteur doit corriger ses données si le formulaire a été jugé invalide par l'application</li>
+                                <li>le visiteur reçoit un message confirmant la prise en compte de sa demande de contact si le formulaire
+                                    a été correctement renseigné.</li>
+                            </ul>
+                        <br>
+                    </p>    
+                </div>    
+                
+            </div>
+            <br>
+            <br>
+            <h2 class="oneProject__subtitle">Diagramme de classe</h2>
+            <div class="diagrammes">
+                <img class="oneProject__oneImgDiag" src="/Assets/images/ECFGarage/ECFGarageDiagClass.jpg"  />
+                <div class="diagrammes-description">
+                    <p class="oneProject__description">Ce diagramme permet de montrer la structure de ma base de données.</p>
+                    <p class="oneProject__description"><em>Remarque :</em> En utilisant Vich\UploaderBundle, dans les tables Infos et Galery, le champ « picture » a été remplacé par les champs imageFile, imageName, imageSize et updateAt, mais seul le champ imageName, qui remplace picture, est utilisé dans l'application.</p>
+                </div>
+            </div>
+            <a class="button--secondary button__label" href="#navbar">Menu</a>
+        </article>
+        <article id="ECFGarageMaquettage" class="oneProject__article">
+            <h2 class="oneProject__subtitle">Maquettage de l'application</h2>
+            <p class="oneProject__description">Après avoir effectué des recherches pour mieux appréhender toutes les informations
+                et fonctionnalités qu'il faut mettre en place dans l'application, j'ai réalisé quelques schémas à main levée des 
+                différents écrans que je désirais obtenir pour proposer toutes les fonctionnalités du site. 
+                Je me suis penchée ensuite sur le choix de la charte graphique.
+            </p> 
+            <a class="button--secondary button__label" href="#navbar">Menu</a>
+        </article>
+
     </section>
 </body>
 </html>
