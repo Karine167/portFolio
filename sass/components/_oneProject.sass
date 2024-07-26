@@ -59,7 +59,14 @@
             margin-bottom: 1rem
             object-fit: cover
             border-radius: 1rem
-    
+
+        &--imgArticle0
+            width: 100%
+            overflow: auto
+            margin-bottom: 1rem
+            object-fit: cover
+            border-radius: 1rem    
+
     &__gallery2
         display: flexbox
         justify-content: center
@@ -81,10 +88,16 @@
     &__oneImgDiag
         width: 100%
         overflow: auto
-        margin: 0.25rem
+        margin: 0.1rem
         object-fit: cover
         border-radius: 1rem
 
+    &__oneImgAdmin
+        width: 100%
+        overflow: auto
+        margin: 0.1rem
+        object-fit: cover
+        border-radius: 1rem
             
 ul 
     list-style: none
@@ -123,8 +136,12 @@ li:before
 
 
 @media (min-width: 768px) 
-    .oneProject__gallery2--imgArticle2
-        width: 48%
+    .oneProject
+        &__gallery2--imgArticle2
+            width: 48%
+        &__oneImgAdmin
+            width: 90%
+            margin: 0.25rem
 
 @media (min-width: 1024px) 
     .oneProject
@@ -135,12 +152,16 @@ li:before
             &--imgArticle
                 width: auto
                 margin-right: 0.3rem
+            &--imgArticle0
+                width: 48%
         &__gallery2
             width: auto
             &--imgArticle2
                 width: 45%
         &__oneImgDiag
             width: 60%
+        &__oneImgAdmin
+        width: 70%
         &__gallery
             display: flex
             justify-content: space-between

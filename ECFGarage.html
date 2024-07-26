@@ -40,6 +40,7 @@
                 <a class="button button__label" href="#ECFGarageResume">Résumé du projet</a>
                 <a class="button--secondary button__label" href="#ECFGaragePrepare">Préparation et gestion du projet</a>
                 <a class="button--secondary button__label" href="#ECFGarageMaquettage">Maquettage de l'application</a>
+                <a class="button--secondary button__label" href="#ECFGarageInterfaceAdmin">L'interface d'administration</a>
             </div>
         </nav>
         <article id="ECFGarageResume" class="oneProject__article">
@@ -66,13 +67,14 @@
                 des commentaires, et répondre à des demandes de contact. 
             </p>
             <p class="oneProject__description">
-                Pour réaliser ce site, j'ai utilisé le framework Symfony pour la structure d'ensemble, les langages HTML, Twig, CSS, 
-                le framework Bootstrap et un peu de JavaScript pour le front-end, une base de données relationnelles avec MariaDB, 
-                et les langages PHP et Sql pour le back-end. <br>
                 Ayant été seule sur ce projet, j'ai été confrontée à quelques défis et j'ai dû recourir à de nombreuses sources 
                 documentaires (manuels, forums, vidéos…) pour compléter les connaissances acquises lors de ma formation et 
                 augmenter mes compétences. Ce fût une expérience très enrichissante.
             </p>
+            <div class="oneProject__gallery">
+                <img class="oneProject__gallery--imgArticle0" src="/Assets/images/ECFGarage/ECFGarageSpeTech1.jpg"  />
+                <img class="oneProject__gallery--imgArticle0" src="/Assets/images/ECFGarage/ECFGarageSpeTech2.jpg"  />
+            </div>
             <a class="button--secondary button__label" href="#navbar">Menu</a>
         </article>
         <article id="ECFGaragePrepare" class="oneProject__article">
@@ -175,7 +177,41 @@
             </div>
             <a class="button--secondary button__label" href="#navbar">Menu</a>
         </article>
-
+        <article id="ECFGarageInterfaceAdmin" class="oneProject__article">
+            <h2 class="oneProject__subtitle">L'interface d'administration</h2>
+            <p class="oneProject__description">
+            Dans le cadre de l'ECF de la formation, je n'avais qu'un mois pour réaliser cette application. 
+            J'ai donc utilisé symfony (version LTS: 6.4) et le bundle Easyadmin afin d'avoir très rapidement
+            une interface d'administration fonctionnelle et sécurisée.
+            </p>
+            <p class="oneProject__description">
+                Seule une personne connectée en tant qu'admin peut gérer les employés et modifier les informations du site.
+            </p>
+            <img class="oneProject__oneImgDiag" src="/Assets/images/ECFGarage/ECFGarageEasyAdmin1.jpg"  />
+            <p class="oneProject__description">
+                Voici le menu correspondant pour un employé
+            </p>
+            <img class="oneProject__oneImgDiag" src="/Assets/images/ECFGarage/ECFGarageEasyAdmin2.jpg"  />
+            <p class="oneProject__description">
+                De plus, en ce qui concerne les infos du site, j'ai décidé de ne donner que la possibilité de créer 
+                de nouvelles infos ou bien de modifier (Editer) des infos existantes.
+                Chaque information est repérée par sa position et peut être visible ou cachée, de façon à pouvoir gérer 
+                facilement des informations cycliques (congés annuels, promotions...).
+            </p>
+            <img class="oneProject__oneImgDiag" src="/Assets/images/ECFGarage/ECFGarageEasyAdmin3.jpg"  />
+            <br>
+            <p class="oneProject__description">
+                Puis, après avoir terminé la rédaction de mes deux dossiers (projet et professionnel) et tout en me préparant
+                pour l'épreuve orale finale, j'ai essayé de mettre en place une nouvelle interface d'administration dans le même
+                thème que l'interface utilisateur. Pour cette interface, j'ai également eu recours à un voter afin que les employés 
+                ne puissent accéder qu'à leur profil particulier.
+            </p>
+            <img class="oneProject__oneImgAdmin" src="/Assets/images/ECFGarage/ECFGarageNewAdmin1.jpg"  />
+            <img class="oneProject__oneImgAdmin" src="/Assets/images/ECFGarage/ECFGarageNewAdmin2.jpg"  />
+            <img class="oneProject__oneImgAdmin" src="/Assets/images/ECFGarage/ECFGarageNewAdmin3.jpg"  />
+            <br>
+            <a class="button--secondary button__label" href="#navbar">Menu</a>
+        </article>
     </section>
 </body>
 </html>
